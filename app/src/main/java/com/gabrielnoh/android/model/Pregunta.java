@@ -24,7 +24,7 @@ public class Pregunta {
         this.mRespuestaVerdadera = mRespuestaVerdadera;
     }
 
-    public Boolean getmRespuestaVerdadera() {
+    public Boolean ismRespuestaVerdadera() {
         return mRespuestaVerdadera;
     }
 

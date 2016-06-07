@@ -6,7 +6,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import com.gabrielnoh.android.model.Pregunta;
 
 
@@ -68,7 +67,7 @@ public class GeoActivity extends AppCompatActivity {
 
 
     private void verificarRespuesta(boolean botonOprimido) {
-        boolean respuestaEsVerdadera = mBancoDePreguntas[mPreguntaActual].getmRespuestaVerdadera();
+        boolean respuestaEsVerdadera = mBancoDePreguntas[mPreguntaActual].ismRespuestaVerdadera();
         if (botonOprimido == respuestaEsVerdadera) {
             Toast.makeText(GeoActivity.this, R.string.texto_correcto, Toast.LENGTH_SHORT)
                     .show();
